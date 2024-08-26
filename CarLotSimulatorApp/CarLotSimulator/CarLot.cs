@@ -19,5 +19,7 @@ public class CarLot
         {
             Console.WriteLine($"{vehicle.Year} {vehicle.Make} {vehicle.Model}");
         }
-    } 
+    }
+
+    public static int _numberOfCars;
 }

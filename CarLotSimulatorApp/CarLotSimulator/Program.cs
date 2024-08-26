@@ -8,11 +8,12 @@ namespace CarLotSimulator
         static void Main(string[] args)
         {
             //TODO
+            Console.WriteLine($"Current number of cars: {CarLot._numberOfCars}");
             
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
-
+            
             //Dot notation
             var carOne = new Car();
             carOne.Year = 2022;
@@ -24,6 +25,8 @@ namespace CarLotSimulator
             
             carOne.MakeEngineNoise();
             carOne.MakeHonkNoise();
+            Console.WriteLine($"Current number of cars: {CarLot._numberOfCars}");
+            
             Console.WriteLine("-----------------------");
             
             //*************BONUS*************//
@@ -42,12 +45,16 @@ namespace CarLotSimulator
             };
             carTwo.MakeEngineNoise();
             carTwo.MakeHonkNoise();
+            Console.WriteLine($"Current number of cars: {CarLot._numberOfCars}");
+            
             Console.WriteLine("_______________________");
 
             //Custom constructor (default & custom methods at bottom of Car.cs)
             var carThree = new Car(2013, "VW", "Passat","normal vehicle", "beeeeeeeep", true);
             carThree.MakeEngineNoise();
             carThree.MakeHonkNoise();
+            Console.WriteLine($"Current number of cars: {CarLot._numberOfCars}");
+            
             Console.WriteLine("-----------------------");
             
             //*************BONUS X 2*************//
